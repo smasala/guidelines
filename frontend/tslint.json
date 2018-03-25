@@ -1,0 +1,55 @@
+{
+	"extends": ["tslint-angular"],
+	"rules": {
+		"max-classes-per-file": [true, 1, "exclude-class-expressions"],
+		"angular-whitespace": false,
+		"ban": [
+			true, ["fdescribe"],
+			["fit"]
+		],
+		"component-class-suffix": true,
+		"directive-class-suffix": true,
+		"member-ordering": [
+			true,
+			{
+				"order": [
+					"public-static-field",
+					"public-instance-field",
+					"public-constructor",
+					"private-static-field",
+					"private-instance-field",
+					"private-constructor",
+					"public-instance-method",
+					"protected-instance-method",
+					"private-instance-method"
+				]
+			}
+		],
+		"member-access": true,
+		"max-file-line-count": [true, 500],
+		"no-any": true,
+		"no-duplicate-variable": true,
+		"no-eval": true,
+		"no-inferrable-types": false,
+		"no-forward-ref": true,
+		"no-input-rename": true,
+		"no-output-rename": true,
+		"use-host-property-decorator": true,
+		"use-input-property-decorator": true,
+		"use-output-property-decorator": true,
+		"use-pipe-transform-interface": true,
+		"no-invalid-this": [
+			true,
+			"check-function-in-method"
+		],
+		"no-internal-module": true,
+		"typedef": [
+			true,
+			"call-signature",
+			"parameter",
+			"member-variable-declaration",
+			"property-declaration",
+			"variable-declaration"
+		]
+	}
+}

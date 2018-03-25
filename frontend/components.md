@@ -16,15 +16,14 @@
 ### Example:
 my-component.component.ts
 ```typescript
-
 /**
 * Import should be in alphabetical order 
 */
 import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { MyComponentDataService } from './shared/my-component-data.service.ts';
-import { MyComponentHighlightingService } from './shared/my-component-highlighting.service.ts';
-import { MyType } from './shared/my-type.ts';
+import { MyComponentDataService } from './shared/my-component-data.service';
+import { MyComponentHighlightingService } from './shared/my-component-highlighting.service';
+import { MyType } from './shared/my-type';
 
 @Component({
     /**
@@ -53,24 +52,12 @@ export class MyComponent {
      */
     @Input()
     public title: string;
-
-    /**
-     * 'any' types are not permitted unless a 3rd party framework
-     * explicitly uses it.
-     * Even trivially inferred types should be declared such as boolean and string.
-     */
-    private body: MyType;
-
-    /**
-     * Properties with no explicit accessor is not allowed
-     */
-    myOtherProperty: number;
-
+    
     /**
      * Template properties should be marked as 'public'.
      */
     public myForm: FormGroup;
-
+    
     /**
      * Properties (public and private) are to be documented
      * @example
@@ -79,7 +66,19 @@ export class MyComponent {
      * @type {boolean}
      * @default false
      */
-    public myOtherProperty: boolean;
+    public myOtherPublicProperty: boolean;
+    
+    /**
+     * Properties with no explicit accessor is not allowed
+     */
+    myOtherProperty: number;
+    
+    /**
+     * 'any' types are not permitted unless a 3rd party framework
+     * explicitly uses it.
+     * Even trivially inferred types should be declared such as boolean and string.
+     */
+    private body: MyType;
 
     /**
      * Business logic is to be extracted to service by functionality
@@ -109,6 +108,4 @@ export class MyComponent {
     }
 
 }
-
-
 ```
