@@ -10,10 +10,10 @@
 
 ```typescript
 import { Injectable } from '@angular/core';
-import { MyHttpService } from '../../shared-module/my-http.service.ts';
-import { Observable } from 'rxjs/Observable';
-import { Item } from './item.ts';
 import { Response } from '@angular/http';
+import { Observable } from 'rxjs/Observable';
+import { MyHttpService } from '../../shared-module/my-http.service';
+import { Item } from './item';
 
 /**
  * This service gets some special date from the DB
