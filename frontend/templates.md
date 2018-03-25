@@ -7,6 +7,7 @@
 - Events should call public functions by identifiable names.
 - Templates should be written and maintained in `html` files
     - Tip: `vscode` provides support for missing property declarations in templates and finding references (`ctrl + click`)
+- Elements with multiple inputs and other declarations should be declared `one per line` and not inline.
 
 ## Example
 
