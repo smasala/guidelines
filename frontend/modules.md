@@ -2,8 +2,9 @@
 
 # Angular Modules
 
-- Each component should be module
+- Each component should be isolated into a module
     - Rationale: https://stackoverflow.com/questions/49286448/
+    - Tip: Angular component generator extension for `vscode` does this out-of-the-box
 
 ```
 my-component (folder)
