@@ -4,8 +4,6 @@
 
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "fullTemplateTypeCheck": true,      
-        "strictInjectionParameters": true,
 
         "outDir": "./dist/out-tsc",
         "sourceMap": true,
@@ -21,6 +19,10 @@
         "es2016",
         "dom"
         ]
+    },
+    "angularCompilerOptions": {
+        "fullTemplateTypeCheck": true,      
+        "strictInjectionParameters": true
     },
     "include": [
         "./src/**/*"
